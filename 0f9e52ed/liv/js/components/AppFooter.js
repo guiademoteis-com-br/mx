@@ -105,7 +105,6 @@ export const AppFooter = {
         </div>
       </div>
 
-      <link rel="stylesheet" href="assets/wpp/wpp.css">
       <div id="gm-wa">
         <label for="gm-wa-x" title="Fechar">
           &times;
