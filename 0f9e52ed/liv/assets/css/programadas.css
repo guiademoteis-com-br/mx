@@ -1,0 +1,427 @@
+:root {
+  --go-font-family: "Red Hat Display", sans-serif;
+  --go-font-regular: 300;
+  --go-font-medium: 400;
+  --go-font-semibold: 600;
+
+  --go-background: rgba(16, 16, 16, 1);
+  --go-text: #fff;
+  --go-border: none;
+
+  --go-titulo-font: "Red Hat Display", sans-serif;
+  --go-titulo-font-size: 19px;
+  --go-titulo-font-weight: 600;
+  --go-titulo-font-color: #fff;
+
+  --go-titulo-descricao-font: "Red Hat Display", sans-serif;
+  --go-titulo-descricao-font-size: 14px;
+  --go-titulo-descricao-font-weight: 400;
+  --go-titulo-descricao-font-color: #fff;
+
+  --go-input-font: "Red Hat Display", sans-serif;
+  --go-input-background: #f5f5f5;
+  --go-input-label: #fff;
+  --go-input-text: rgba(16, 16, 16, 1);
+  --go-input-icon: rgba(16, 16, 16, 1);
+  --go-input-border: #f5f5f5;
+
+  --go-button-font: "Red Hat Display", sans-serif;
+  --go-button-background: rgba(16, 16, 16, 1);
+  --go-button-text: #ffffff;
+  --go-button-icon: #ffffff;
+  --go-button-border: #e20e01;
+
+  --go-reserva-background: #f0f3f5;
+  --go-reserva-title: #1a1a1a;
+  --go-reserva-text: #1a1a1a;
+  --go-reserva-text2: #1a1a1a;
+  --go-reserva-subtext: #2b2b2b;
+  --go-reserva-icon: rgba(16, 16, 16, 1);
+  --go-reserva-next: rgba(16, 16, 16, 1);
+  --go-reserva-border: none;
+  --go-reserva-price-of: #606060;
+
+  --go-calendario-font: "Red Hat Display", sans-serif;
+  --go-calendario-background: #fff;
+  --go-calendario-border: #fff;
+  --go-calendario-text: rgba(16, 16, 16, 1);
+  --go-calendario-text-disabled: rgba(199, 199, 199, 0.5);
+  --go-calendario-semana-background: rgba(16, 16, 16, 1);
+  --go-calendario-icon: #fff;
+  --go-calendario-icon-disabled: rgba(16, 16, 16, 1);
+  --go-calendario-selected-background: rgba(16, 16, 16, 1);
+  --go-calendario-selected-text: #fff;
+  --go-calendario-separate: none;
+  --go-calendario-seta: #505050;
+  --go-calendario-seta-disabled: rgba(80, 80, 80, 0.5);
+
+  --go-tab-background: rgba(16, 16, 16, 1);
+  --go-tab-border: #fff;
+  --go-tab-text: #fff;
+  --go-tab-icon: #fff;
+  --go-tab-selected-background: rgba(16, 16, 16, 1);
+  --go-tab-selected-text: #fff;
+  --go-tab-selected-icon: #fff;
+
+  --go-descricao-font: "Red Hat Display", sans-serif;
+  --go-descricao-font-size: 14px;
+  --go-descricao-font-weight: 400;
+  --go-descricao-font-color: #fff;
+
+  --go-loading-background: rgba(16, 16, 16, 1);
+  --go-loading-color: #fff;
+
+  --go-modal-color: rgba(16, 16, 16, 1);
+  --go-modal-background: rgba(0, 0, 0, 0.2);
+  --go-modal-border: none;
+  --go-modal-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.16);
+
+  --go-modal-header-font: "Trebuchet MS", serif;
+  --go-modal-header-font-size: 24px;
+  --go-modal-header-font-weight: 400;
+  --go-modal-header-font-color: #fff;
+
+  --go-modal-body-font: "Work Sans", serif;
+  --go-modal-body-font-size: 18px;
+  --go-modal-body-font-weight: 400;
+  --go-modal-body-font-color: #333333;
+
+  --go-modal-separador: none;
+
+  --go-modal-button-font: "Work Sans", serif;
+  --go-modal-button-font-color: #fff;
+  --go-modal-button-font-size: 18px;
+  --go-modal-button-font-weight: 400;
+  --go-modal-button-background: rgba(16, 16, 16, 1);
+  --go-modal-button-border: none;
+
+  --go-tarja-campanha-background: #f72c4b;
+  --go-tarja-campanha-color: #fff;
+  --go-tarja-campanha-separador-background: #fff;
+
+  --go-indisponivel-border: 1px solid #ffdd00;
+  --go-indisponivel-font-family: "Work Sans", serif;
+  --go-indisponivel-font-medium: 400;
+  --go-indisponivel-font-size: 14px;
+  --go-indisponivel-font-color: #ffdd00;
+
+  --go-input-disabled-opacity: 0.4;
+  --go-input-disabled-font: "Red Hat Display", sans-serif;
+  --go-input-disabled-background: #fff;
+  --go-input-disabled-icon: #777777;
+  --go-input-disabled-border: 1px solid #d8d8d8;
+}
+
+header {
+  height: auto !important;
+}
+
+.go-header h1.go-header-title {
+  color: #fff !important;
+}
+
+/* css geral */
+.itemComponentInative {
+  display: none;
+}
+
+.itemComponentActive {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+  border-top: 1px solid #fff;
+}
+
+.go-header {
+  margin: 0 5% 0 0 !important;
+}
+
+.go-programadas {
+  width: 100%;
+}
+
+.preco-calendario {
+  width: 60% !important;
+  margin: 0 auto;
+  padding: 25px 0;
+}
+
+.compo-aviso-preco {
+  background: #ffce20;
+  color: rgba(16, 16, 16, 1);
+  font-size: 14px;
+  text-align: center;
+  font-weight: 500;
+  padding: 8px 24px;
+  line-height: 140%;
+  margin-bottom: 16px;
+}
+
+.compo-box-calendario {
+  width: 100% !important;
+  margin: 8px 0 15px !important;
+  background-color: #e5e3d7 !important;
+  border: 1px solid rgba(168, 16, 36, 0.15);
+  color: var(--go-input-text) !important;
+  font-size: 16px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 16px !important;
+}
+
+.compo-box-calendario::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  display: block;
+  position: absolute;
+  left: 35%;
+  background-image: url("../images/calendar.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.go-programadas-calendario {
+  position: absolute;
+  z-index: 1;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+  background: var(--go-calendario-background);
+  color: var(--go-calendario-text);
+  font-family: var(--go-calendario-font);
+}
+
+.DayPicker-NavButton {
+  top: 0.6em;
+}
+
+.DayPicker-Months {
+  height: 250px;
+}
+
+.DayPicker .DayPicker-Months>div {
+  margin-right: 0 !important;
+}
+
+.go-programadas-calendario .DayPicker-Month {
+  width: 250px;
+  margin-left: 0;
+  font-size: 14px !important;
+}
+
+.go-programadas-calendario .DayPicker-Month {
+  margin-left: 0;
+}
+
+.go-programadas-calendario .DayPicker-Caption {
+  text-align: center;
+}
+
+.DayPicker-Weekdays {
+  background-color: var(--go-calendario-semana-background);
+  color: var(--go-calendario-text);
+}
+
+.DayPicker-Weekday {
+  color: #fff !important;
+}
+
+.DayPicker-Day--disabled {
+  opacity: 0.5;
+}
+
+.DayPicker-Day--today {
+  background: rgba(16, 16, 16, 1);
+  color: #fff;
+}
+
+.compo-aviso-recepcao,
+.compo-aviso-garantia {
+  color: var(--go-text) !important;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.compo-aviso-botao {
+  background: rgba(16, 16, 16, 1);
+  color: #fff;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 140%;
+  padding: 5px 8px;
+  margin-bottom: 8px;
+}
+
+.DayPicker-Weekday {
+  color: #fff;
+}
+
+.habitacione__interna-info p {
+  font-size: 14px !important;
+}
+
+.DayPicker-NavButton--prev {
+  left: 0;
+}
+
+.DayPicker-Day.DayPicker-Day--today.DayPicker-Day--outside {
+  background-color: transparent !important;
+}
+
+.go-programadas-calendario-full-semanas-item {
+  color: #fff !important;
+}
+
+.go-programadas-calendario-full {
+  height: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  .habitaciones-int__content .habitacione__programada {
+    background: var(--go-background);
+    padding: 0 !important;
+    margin-top: 40px;
+  }
+
+  .itemComponentActive {
+    flex-direction: column;
+    padding: 20px !important;
+  }
+
+  .preco-calendario {
+    width: 100% !important;
+    padding: 0 10px;
+  }
+
+  .go-tabs {
+    border-radius: 12px !important;
+  }
+
+  .itemComponentActive .go-tabs-wrapper .go-tabs-selecionada {
+    border-radius: 99px;
+  }
+
+  .itemComponentActive .go-tabs {
+    border-radius: 99px !important;
+    border: 1px solid #fff !important;
+  }
+
+  .itemComponentActive .go-programadas-listagem-item-entrada-saida-input {
+    width: 100% !important;
+  }
+}
+
+/* css geral personalizavel */
+#tblCalendarioPeriodosPernoites {
+  width: 100%;
+  background-color: rgba(16, 16, 16, 1);
+}
+
+.tblGmClnd {
+  width: 100%;
+  background: #fff;
+}
+
+.tblGmClnd td {
+  text-align: left;
+  padding: 10px 0 10px 19px;
+  color: #fff;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+}
+
+.tblGmClnd tr {
+  border-bottom: 1px solid #fff;
+}
+
+.tblGmClnd tr:last-of-type {
+  border-bottom: 0;
+}
+
+.tblGmClnd td:last-child {
+  text-align: right;
+  padding-right: 19px;
+  padding-left: 0;
+  font-size: 16px;
+}
+
+.habitacione__programada {
+  padding: 32px 0 30px !important;
+}
+
+.go-programadas-filtros-buscar button {
+  font-weight: 600;
+  border: 1px solid #fff;
+  border-radius: 99px;
+}
+
+.go-tabs-wrapper .go-tabs-selecionada {
+  border: 1px solid #fff;
+  border-radius: 99px;
+  text-transform: uppercase;
+}
+
+.go-programadas-filtros-periodo-input p,
+.go-programadas-listagem-item-entrada-saida-input p,
+.go-programadas-filtros-periodo-select-item {
+  color: rgba(122, 116, 118, 1);
+}
+
+.go-tabs {
+  border: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.go-programadas-listagem-item-entrada-saida-input {
+  width: auto !important;
+}
+
+@media only screen and (max-width: 768px) {
+  .go-tabs {
+    border-radius: 99px;
+  }
+
+  .go-tabs-selecionada {
+    border: 1px solid #fff;
+  }
+
+  .itemComponentActive {
+    padding: 0 10px;
+  }
+
+  .tblGmClnd td {
+    padding: 10px 0 10px 10px;
+  }
+
+  .tblGmClnd td:last-child {
+    padding-right: 10px;
+  }
+
+  .go-header {
+    margin: 0 0 15px !important;
+  }
+
+  .go-programadas-descricao {
+    margin: 0 !important;
+  }
+
+  .go-programadas-wrapper {
+    padding: 26px 0 !important;
+  }
+
+  .compo-box-calendario::before {
+    left: 25%;
+  }
+
+  .go-imediatas-descriao {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+}
