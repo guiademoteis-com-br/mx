@@ -1,0 +1,104 @@
+{
+    "name": "Liv 2",
+    "slug": "liv-2",
+    "review": "<div><b>oi</b></div>",
+    "primary_color": "#6b516c",
+    "phone": "(55) 3333-3333",
+    "whatsapp": "",
+    "email": "",
+    "zip_code": "12000",
+    "state": "Ciudad de México",
+    "city": "Milpa Alta",
+    "neighborhood": "La Concepción",
+    "street": "Das cocadas",
+    "ext_number": "123",
+    "int_number": "",
+    "facebook_link": "http://localhost:8000/preview/0f9e52ed/liv/motel.html",
+    "instagram_link": "http://localhost:8000/preview/0f9e52ed/liv/motel.html",
+    "google_maps_link": "https://www.google.com/maps/dir//Light+Black,+Ulitsa+Pirogova,+87%D0%B0,+Stavropol,+Stavropol+Krai,+R%C3%BAssia,+355011/@44.9988412,41.9070288,17z/data=!4m16!1m7!3m6!1s0x40f9abadd9aae7e7:0x730f7186c5b28766!2sLight+Black!8m2!3d44.9988412!4d41.9096037!16s%2Fg%2F11c5654h3w!4m7!1m0!1m5!1m1!1s0x40f9abadd9aae7e7:0x730f7186c5b28766!2m2!1d41.9096037!2d44.9988412?entry=ttu&g_ep=EgoyMDI2MDQxNS4wIKXMDSoASAFQAw%3D%3D",
+    "facade_image": "conteudo/imagens/facade.jpg",
+    "banner_mobile": "conteudo/imagens/banner-mobile.jpg",
+    "banner_desktop": "conteudo/imagens/banner-desktop.jpg",
+    "logo": "conteudo/imagens/logo.svg",
+    "favicon": "conteudo/imagens/favicon.svg",
+    "suites": [
+        {
+            "slug": "premium",
+            "sort_order": 0,
+            "name": "Premium",
+            "items": [],
+            "important_infos": [],
+            "cover_image": "conteudo/imagens/premium-1.jpg",
+            "first_price": "320",
+            "images": [
+                "conteudo/imagens/premium-1.jpg",
+                "conteudo/imagens/premium-2.jpg"
+            ],
+            "prices": [
+                {
+                    "period": [
+                        1
+                    ],
+                    "weekday": [
+                        "Domingo"
+                    ],
+                    "description": "Hospedagem premium",
+                    "value": "320.00"
+                },
+                {
+                    "period": [
+                        2
+                    ],
+                    "weekday": [
+                        "Segunda-feira"
+                    ],
+                    "description": "Promo casal",
+                    "value": "340.00"
+                },
+                {
+                    "period": [
+                        20
+                    ],
+                    "weekday": [
+                        "Sexta-feira"
+                    ],
+                    "description": "Experiência premium",
+                    "value": "570.00"
+                }
+            ]
+        },
+        {
+            "slug": "jacuzzi",
+            "sort_order": 1,
+            "name": "Jacuzzi",
+            "items": [
+                "Tv",
+                "Wi-fi"
+            ],
+            "important_infos": [
+                "info 1",
+                "imfo 2"
+            ],
+            "cover_image": "conteudo/imagens/jacuzzi-1.jpg",
+            "first_price": "295",
+            "images": [
+                "conteudo/imagens/jacuzzi-1.jpg",
+                "conteudo/imagens/jacuzzi-2.jpg"
+            ],
+            "prices": [
+                {
+                    "period": [
+                        1,
+                        2,
+                        3
+                    ],
+                    "weekday": [
+                        "Quinta-feira"
+                    ],
+                    "description": "Experiência relax",
+                    "value": "295.00"
+                }
+            ]
+        }
+    ]
+}
