@@ -24,7 +24,7 @@
     "suites": [
         {
             "slug": "premium",
-            "sort_order": "0",
+            "sort_order": 0,
             "name": "Premium",
             "items": [
                 "Tv",
