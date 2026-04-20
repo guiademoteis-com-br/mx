@@ -1,0 +1,113 @@
+:root {
+    --cor-balloon-shadow: #AAA;
+    --cor-balloon-bg: #2CB742;
+    --cor-balloon-txt: #FFF;
+    --cor-x-border: #AAA;
+    --cor-x-bg: #FFF;
+    --cor-x-txt: #000;
+
+    --pos-m: auto 16px 4em auto;
+    --pos-d: auto 16px 16px auto;
+}
+
+#gm-wa,
+#gm-wa * {
+    all: unset;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    user-select: none;
+}
+
+#gm-wa {
+    display: flex;
+    max-width: 208px;
+    position: fixed;
+    inset: var(--pos-d);
+    z-index: 2;
+}
+
+#gm-wa [for="gm-wa-x"] {
+    margin: 0 8px auto 0;
+    border-radius: 50%;
+    border: 1px solid var(--cor-x-border);
+    padding: 8px 4px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 0;
+    color: var(--cor-x-txt);
+    background: var(--cor-x-bg);
+    cursor: pointer;
+}
+
+#gm-wa #gm-wa-x,
+#gm-wa:has(#gm-wa-x:checked) :is([for="gm-wa-x"], .gm-wa-txt) {
+    display: none;
+    animation: fade .3s;
+}
+
+#gm-wa .gm-wa-link {
+    display: flex;
+}
+
+#gm-wa .gm-wa-txt {
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    margin-right: 8px;
+    padding: 8px;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+    hyphens: auto;
+    color: var(--cor-balloon-txt);
+    background: var(--cor-balloon-bg);
+    cursor: pointer;
+    position: relative;
+}
+
+#gm-wa .gm-wa-txt::before {
+    content: '';
+    display: block;
+    border-radius: 4px;
+    background: var(--cor-balloon-bg);
+    box-shadow: 1px 1px 10px -1px var(--cor-balloon-shadow);
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+}
+
+#gm-wa .gm-wa-txt::after {
+    content: '';
+    display: block;
+    width: 12px;
+    height: 12px;
+    background: var(--cor-balloon-bg);
+    box-shadow: 1px 1px 10px -1px var(--cor-balloon-shadow);
+    position: absolute;
+    inset: auto -6px 18px auto;
+    transform: rotate(45deg);
+    z-index: -1;
+}
+
+#gm-wa .gm-wa-logo {
+    margin: auto 0 8px 8px;
+    cursor: pointer;
+}
+
+@keyframes fade {
+    0% {
+        display: block;
+    }
+    100% {
+        display: none;
+        opacity: 0;
+    }
+}
+
+@media (max-width: 992px) {
+    #gm-wa {
+        inset: var(--pos-m);
+    }    
+}

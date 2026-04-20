@@ -24,15 +24,14 @@
     "suites": [
         {
             "slug": "premium",
-            "sort_order": 0,
+            "sort_order": "0",
             "name": "Premium",
             "items": [],
             "important_infos": [],
             "cover_image": "conteudo/imagens/premium-1.jpg",
             "first_price": "320",
             "images": [
-                "conteudo/imagens/premium-1.jpg",
-                "conteudo/imagens/premium-2.jpg"
+                "conteudo/imagens/premium-1.jpg"
             ],
             "prices": [
                 {
@@ -69,7 +68,7 @@
         },
         {
             "slug": "jacuzzi",
-            "sort_order": 1,
+            "sort_order": "1",
             "name": "Jacuzzi",
             "items": [
                 "Tv",
