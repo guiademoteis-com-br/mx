@@ -15,7 +15,7 @@
     "int_number": "",
     "facebook_link": "http://localhost:8000/admin/",
     "instagram_link": "http://localhost:8000/admin/",
-    "google_maps_link": "",
+    "google_maps_link": "https://www.google.com/maps/dir//Drops+Motel+Manaus+-+Av.+Cosme+Ferreira,+3410+-+Coroado,+Manaus+-+AM,+69082-230/@-3.0747855,-59.9697682,17z/data=!4m19!1m10!3m9!1s0x926c1b95453a15a3:0xe7044519e68a7dab!2sDrops+Motel+Manaus!5m2!4m1!1i2!8m2!3d-3.0747855!4d-59.9671933!16s%2Fg%2F11qgz61cgr!4m7!1m0!1m5!1m1!1s0x926c1b95453a15a3:0xe7044519e68a7dab!2m2!1d-59.9671933!2d-3.0747855?entry=ttu&g_ep=EgoyMDI2MDQxNS4wIKXMDSoASAFQAw%3D%3D",
     "facade_image": "conteudo/imagens/facade.jpg",
     "banner_mobile": "conteudo/imagens/banner-mobile.jpg",
     "banner_desktop": "conteudo/imagens/banner-desktop.jpg",
@@ -24,7 +24,7 @@
     "suites": [
         {
             "slug": "premium",
-            "sort_order": 0,
+            "sort_order": "0",
             "name": "Premium",
             "items": [
                 "Tv",
