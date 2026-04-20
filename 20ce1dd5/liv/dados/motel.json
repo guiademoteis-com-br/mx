@@ -1,0 +1,61 @@
+{
+    "name": "Liv",
+    "slug": "liv",
+    "review": "Oi",
+    "primary_color": "#81378b",
+    "phone": "(99) 9999-9999",
+    "whatsapp": "(99) 9999-9999",
+    "email": "eleazar.gm@guiademoteis.com.br",
+    "zip_code": "04100",
+    "state": "Ciudad de México",
+    "city": "Coyoacán",
+    "neighborhood": "Del Carmen",
+    "street": "",
+    "ext_number": "",
+    "int_number": "",
+    "facebook_link": "http://localhost:8000/admin/",
+    "instagram_link": "http://localhost:8000/admin/",
+    "google_maps_link": "",
+    "facade_image": "conteudo/imagens/facade.jpg",
+    "banner_mobile": "conteudo/imagens/banner-mobile.jpg",
+    "banner_desktop": "conteudo/imagens/banner-desktop.jpg",
+    "logo": "conteudo/imagens/logo.svg",
+    "favicon": "conteudo/imagens/favicon.svg",
+    "suites": [
+        {
+            "slug": "premium",
+            "sort_order": 0,
+            "name": "Premium",
+            "items": [
+                "Tv",
+                "Wifi"
+            ],
+            "important_infos": [
+                "http://localhost:8000/admin/"
+            ],
+            "cover_image": "conteudo/imagens/premium-1.jpg",
+            "first_price": "200",
+            "images": [
+                "conteudo/imagens/premium-1.jpg",
+                "conteudo/imagens/premium-2.jpg",
+                "conteudo/imagens/premium-3.jpg"
+            ],
+            "prices": [
+                {
+                    "period": [
+                        1,
+                        2,
+                        3
+                    ],
+                    "weekday": [
+                        "Domingo",
+                        "Segunda-feira",
+                        "Terça-feira"
+                    ],
+                    "description": "Promocional",
+                    "value": "200.00"
+                }
+            ]
+        }
+    ]
+}

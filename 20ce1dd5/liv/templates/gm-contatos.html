@@ -1,0 +1,8 @@
+<h3 v-if="store.whatsapp_link"><i class="fa-brands fa-whatsapp"></i> Whatsapp</h3>
+<p v-if="store.whatsapp_link">
+    <a :href="store.whatsapp_link" target="_blank">{{ store.whatsapp }}</a>
+</p>
+<h3 v-if="store.phone"><i class="fa-solid fa-phone"></i> Teléfono</h3>
+<p v-if="store.phone">{{ store.phone }}</p>
+<h3 v-if="store.email"><i class="fa-solid fa-envelope"></i> Email</h3>
+<p v-if="store.email">{{ store.email }}</p>

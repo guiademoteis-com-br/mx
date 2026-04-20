@@ -1,0 +1,15 @@
+<div class="suite-prices-box" v-for="group in groupedSuitePrices" :key="group.weekday">
+    <h3>Precios de {{ group.weekday }}</h3>
+    <table>
+        <tbody>
+            <tr v-for="(price, index) in group.items" :key="group.weekday + '-' + index">
+                <td>
+                    {{ price.period }} {{ periodLabel(price.period) }}
+                    <br />
+                    <small v-if="price.description">{{ price.description }}</small>
+                </td>
+                <td>{{ price.value }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
