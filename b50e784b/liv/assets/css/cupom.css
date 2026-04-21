@@ -1,0 +1,49 @@
+html,
+body {
+  font-family: "Lato", sans-serif;
+  background: #fdfffc;
+  color: #170315;
+}
+.cupom__content {
+  border: 1px dashed #acacac;
+  background: #fff;
+  padding: 2%;
+}
+.cupom__content--header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  border-bottom: 1px dashed #acacac;
+  padding-bottom: 2%;
+}
+.cupom__header--text{
+  text-align: right;
+}
+.cupom__content--infos {
+  padding-top: 2%;
+}
+.cupom__content--infos h2{
+  margin-bottom: 16px;
+}
+.cupom__infos--btn {
+  text-align: center;
+}
+.cupom__infos--btn a {
+  width: 100%;
+  display: block;
+  border-radius: 1.97px;
+  border: none;
+  font-family: "Work Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 17.6px;
+  text-align: center;
+  padding: 13px 34px;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  border: 0.98px solid #170315;
+  color: #170315;
+  background: transparent;
+  text-decoration: none;
+}
