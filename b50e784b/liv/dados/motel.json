@@ -18,7 +18,7 @@
     "google_maps_link": "",
     "facade_image": null,
     "banner_mobile": null,
-    "banner_desktop": null,
+    "banner_desktop": "conteudo/imagens/banner-desktop.jpg",
     "logo": "conteudo/imagens/logo.svg",
     "favicon": null,
     "suites": []
