@@ -19,7 +19,7 @@
     "facade_image": null,
     "banner_mobile": null,
     "banner_desktop": null,
-    "logo": null,
+    "logo": "conteudo/imagens/logo.svg",
     "favicon": null,
     "suites": []
 }
