@@ -8,8 +8,9 @@
                     <br />
                     <small v-if="price.description">{{ price.description }}</small>
                 </td>
-                <td>{{ price.value }}</td>
+                <td>{{ formatPriceValue(price.value) }}</td>
             </tr>
         </tbody>
     </table>
 </div>
+

@@ -62,6 +62,18 @@ export async function loadStore() {
     }
 }
 
+export function formatPriceValue(value) {
+    const parsed = parsePriceValue(value);
+    if (!Number.isFinite(parsed) || parsed <= 0) {
+        return '';
+    }
+
+    return parsed.toLocaleString('pt-BR', {
+        minimumFractionDigits: 2,
+        maximumFractionDigits: 2,
+    });
+}
+
 export function getSuiteBySlug(slug) {
     const normalizedSlug = normalizeSlug(slug);
     if (!normalizedSlug) {

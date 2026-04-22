@@ -48,7 +48,7 @@
 
 /* SUÍTES */
 .suites.internas {
-  background-image: url(../images/suite-bg.png);
+  background-image: linear-gradient(rgba(203, 160, 82, 1));
   background-position: center;
 }
 

@@ -1,4 +1,4 @@
-ï»¿import { getCurrentSuite, loadStore, store } from './store.js';
+import { formatPriceValue, getCurrentSuite, loadStore, store } from './store.js';
 
 const { createApp, computed } = Vue;
 
@@ -60,7 +60,7 @@ app.component('gm-tabela-periodos-precos', {
             const value = Number(period);
             return value === 1 ? 'Hora' : 'Horas';
         };
-        return { groupedSuitePrices, periodLabel };
+        return { groupedSuitePrices, periodLabel, formatPriceValue };
     },
     template: await loadTemplate('gm-tabela-periodos-precos'),
 });
@@ -85,49 +85,49 @@ app.component('gm-informacoes-importantes', {
 
 app.component('gm-redes', {
     setup() {
-        return { store: Vue.inject('store') };
+        return { store: Vue.inject('store'), formatPriceValue };
     },
     template: await loadTemplate('gm-redes'),
 });
 
 app.component('gm-suites', {
     setup() {
-        return { store: Vue.inject('store') };
+        return { store: Vue.inject('store'), formatPriceValue };
     },
     template: await loadTemplate('gm-suites'),
 });
 
 app.component('gm-motel', {
     setup() {
-        return { store: Vue.inject('store') };
+        return { store: Vue.inject('store'), formatPriceValue };
     },
     template: await loadTemplate('gm-motel'),
 });
 
 app.component('gm-endereco', {
     setup() {
-        return { store: Vue.inject('store') };
+        return { store: Vue.inject('store'), formatPriceValue };
     },
     template: await loadTemplate('gm-endereco'),
 });
 
 app.component('gm-contatos', {
     setup() {
-        return { store: Vue.inject('store') };
+        return { store: Vue.inject('store'), formatPriceValue };
     },
     template: await loadTemplate('gm-contatos'),
 });
 
 app.component('gm-lista-suites', {
     setup() {
-        return { store: Vue.inject('store') };
+        return { store: Vue.inject('store'), formatPriceValue };
     },
     template: await loadTemplate('gm-lista-suites'),
 });
 
 app.component('gm-footer', {
     setup() {
-        return { store: Vue.inject('store') };
+        return { store: Vue.inject('store'), formatPriceValue };
     },
     template: await loadTemplate('gm-footer'),
 });
@@ -139,7 +139,7 @@ Vue.nextTick(_ => loadDeferredScripts());
 export async function loadTemplate(template) {
     const response = await fetch(`./templates/${template}.html`, { cache: 'no-store' });
     if (!response.ok) {
-        throw new Error(`NÃ£o foi possÃ­vel carregar o template: ${template}`);
+        throw new Error(`Não foi possível carregar o template: ${template}`);
     }
     return await response.text();
 }
@@ -253,4 +253,5 @@ function parsePricePeriods(value) {
 
     return text.split(',').map(item => item.trim()).filter(Boolean);
 }
+
 

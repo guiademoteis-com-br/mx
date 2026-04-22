@@ -1,25 +1,55 @@
 {
     "name": "Liv",
     "slug": "liv",
-    "review": "",
-    "primary_color": "#8c4f38",
-    "phone": "",
-    "whatsapp": "",
-    "email": "",
-    "zip_code": "",
-    "state": "",
-    "city": "",
-    "neighborhood": "",
-    "street": "",
-    "ext_number": "",
+    "review": "o<span style=\"font-size: 15.2px;\">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum nihil, maiores porro blanditiis quod iste inventore sequi nobis expedita quibusdam labore harum corporis minima ipsam natus nesciunt atque veniam cum?</span><div><span style=\"font-size: 15.2px;\"><br></span></div><div><span style=\"font-size: 15.2px;\">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis ab, temporibus earum eaque quos vero sapiente atque voluptate mollitia. Consequuntur, labore. Magnam soluta ipsa optio, rerum eius ducimus totam harum.</span></div>",
+    "primary_color": "#8b377f",
+    "phone": "(99) 9999-9999",
+    "whatsapp": "(99) 9999-9999",
+    "email": "eleazar.gm@guiademoteis.com.br",
+    "zip_code": "06070",
+    "state": "Ciudad de México",
+    "city": "Cuauhtémoc",
+    "neighborhood": "Centro (Área 7)",
+    "street": "Cda. Ernesto Pugibet",
+    "ext_number": "48",
     "int_number": "",
     "facebook_link": "",
     "instagram_link": "",
-    "google_maps_link": "",
-    "facade_image": null,
+    "google_maps_link": "https://www.google.com/maps/dir//Drop+Fitness+Boa+viagem+-+R.+Carlos+Pereira+Falc%C3%A3o,+n%C2%B0+121+-+loja+2B+-+Boa+Viagem,+Recife+-+PE,+51021-350/@-8.1262621,-34.9019434,17z/data=!4m16!1m7!3m6!1s0x7ab1f806aaae671:0xa5bdc2dd72452ff7!2sDrop+Fitness+Boa+viagem!8m2!3d-8.1262621!4d-34.8993685!16s%2Fg%2F11txfc35ps!4m7!1m0!1m5!1m1!1s0x7ab1f806aaae671:0xa5bdc2dd72452ff7!2m2!1d-34.8993596!2d-8.1262268?entry=ttu&g_ep=EgoyMDI2MDQxOS4wIKXMDSoASAFQAw%3D%3D",
+    "facade_image": "conteudo/imagens/facade.jpg",
     "banner_mobile": null,
     "banner_desktop": "conteudo/imagens/banner-desktop.jpg",
     "logo": "conteudo/imagens/logo.svg",
     "favicon": null,
-    "suites": []
+    "suites": [
+        {
+            "slug": "premium",
+            "sort_order": "0",
+            "name": "Premium",
+            "items": [],
+            "important_infos": [],
+            "cover_image": "conteudo/imagens/premium-1.jpg",
+            "first_price": "1210",
+            "images": [
+                "conteudo/imagens/premium-1.jpg",
+                "conteudo/imagens/premium-2.jpg",
+                "conteudo/imagens/premium-3.jpg"
+            ],
+            "prices": [
+                {
+                    "period": [
+                        1,
+                        2,
+                        3
+                    ],
+                    "weekday": [
+                        "Domingo",
+                        "Segunda-feira"
+                    ],
+                    "description": "Promo",
+                    "value": "1210.00"
+                }
+            ]
+        }
+    ]
 }

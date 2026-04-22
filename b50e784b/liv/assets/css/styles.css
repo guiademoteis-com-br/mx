@@ -4,6 +4,7 @@ body {
   background: #000;
   color: #bdbdbd;
   overflow-x: hidden;
+  scrollbar-width: thin;
 }
 
 [v-cloak] {
@@ -704,7 +705,7 @@ a:hover {
   width: 100%;
   height: 402px;
   position: relative;
-  background-image: url(../images/mapa.jpg);
+  background-image: linear-gradient(gainsboro), url(../images/mapa.jpg);
   background-position: center;
   background-size: cover;
   margin-top: 88px;
@@ -835,7 +836,7 @@ a:hover {
   margin-bottom: 11px;
 }
 
-.footer-contact h3:last-of-type {
+.footer-contact h3:not(:first-child) {
   margin-top: 30px;
 }
 
