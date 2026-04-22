@@ -1,0 +1,7 @@
+.cupom .container{
+    width: 95% !important;
+    max-width: 100% !important;
+}
+.cupom__infos--btn {
+  display: none;
+}

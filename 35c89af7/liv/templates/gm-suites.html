@@ -1,0 +1,29 @@
+<template v-for="suite in store.suites" :key="suite.slug">
+    <div class="destaque__slide" v-if="suite.cover_image">
+        <a :href="'suite.html?slug=' + suite.slug">
+            <div
+                class="destaque__slide--image"
+                :style="{ backgroundImage: 'url(' + suite.cover_image + ')' }"
+            >
+                <a :href="'suite.html?slug=' + suite.slug">
+                    <div class="destaque__slide--text">
+                        <h3>
+                            <span>{{ suite.name }}</span>
+                        </h3>
+                    </div>
+                </a>
+            </div>
+            <div class="destaque__slide--bottom">
+                <a :href="'suite.html?slug=' + suite.slug" class="d-flex align-items-center justify-content-between">
+                    <div>
+                        <p>desde ₲ <span>{{ formatPriceValue(suite.first_price) }}</span></p>
+                    </div>
+                    <a :href="'suite.html?slug=' + suite.slug" class="btn-suite">
+                        <img src="assets/images/icones/bt-suite.svg" loading="lazy" alt="ver suíte" />
+                    </a>
+                </a>
+            </div>
+        </a>
+    </div>
+</template>
+

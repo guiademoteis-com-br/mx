@@ -1,0 +1,333 @@
+.topo {
+  width: 100%;
+  height: 290px;
+  background-image: var(--topo);
+  background-position: bottom;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.topo__content {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.56);
+}
+
+.topo__content--text {
+  padding: 10% 15px 25px;
+  color: #fff;
+}
+
+.topo__content--text h2 {
+  color: #fff;
+  font-family: "Helvetica Neue Bold", sans-serif;
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 56px;
+  margin: 0 0 15px;
+  text-transform: uppercase;
+}
+
+.internas {
+  padding: 60px 0 90px;
+}
+
+/* SUÍTES */
+.suites.internas {
+  background-image: linear-gradient(rgba(203, 160, 82, 1));
+  background-position: center;
+}
+
+.suites__internas {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+}
+
+.suites__internas .destaque__slide--image {
+  height: 465px;
+  filter: none;
+}
+
+.suites__internas .destaque__slide--bottom,
+.suites__internas .destaque__slide--text {
+  display: flex;
+  opacity: 1;
+}
+
+/* LOCALIZAÇÃO */
+.internas.localizacao .localizacao__content .localizacao__content--text {
+  width: 100%;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.internas.localizacao .localizacao__content .localizacao__content--text h3 {
+  font-size: 21px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.internas.localizacao .localizacao__content .localizacao__content--mapa {
+  width: 100%;
+  padding-top: 40px;
+}
+
+/* RESERVAS */
+.internas .reservas__content--corte {
+  width: 100%;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.internas .reservas-op {
+  background: rgba(35, 31, 32, 1);
+  margin: 20px 0;
+  border-radius: 12px;
+  box-shadow: 0px 4px 13px rgb(0 0 0 / 10%);
+}
+
+.internas .reservas-op a {
+  padding: 100px;
+  color: rgba(203, 160, 82, 1);
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  border-radius: 12px;
+}
+
+.internas .reservas-op a svg {
+  font-size: 45px;
+}
+
+.internas .reservas-op a h2 {
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  margin: 20px 0 10px;
+}
+
+.internas .reservas-op p {
+  margin-bottom: 10px;
+  line-height: 1.5em;
+}
+
+/* SUÍTES INTERNAS */
+.suit-int.internas {
+  padding-bottom: 30px;
+}
+
+.suites__slide--itens {
+  width: 100%;
+  height: 550px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.suites__slide--itens img {
+  width: 100%;
+}
+
+.suites-int--slide img {
+  width: 100%;
+}
+
+.suit-int.internas .suites__content--itens {
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+  padding: 40px 0;
+}
+
+.suite-prices {
+  width: 100%;
+}
+
+.suite-prices-box {
+  padding-bottom: 40px;
+}
+
+.suite-prices-box:last-of-type {
+  padding-bottom: 0;
+}
+
+.suite-prices-box h3 {
+  margin-bottom: 5px !important;
+}
+
+.suite-prices-box table {
+  width: 100%;
+}
+
+.suite-prices-box tr {
+  border-bottom: 1px solid #fff;
+}
+
+.suite-prices-box td {
+  text-align: left;
+  padding: 10px 0;
+  color: #bdbdbd;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  vertical-align: middle;
+}
+
+.suite-prices-box td:last-child {
+  text-align: right;
+  padding-right: 0;
+  padding-left: 0;
+  font-size: 16px;
+}
+
+.suite-prices-box h3,
+.suites__important h4,
+.suites__calendar--itens h4 {
+  font-size: 1.125rem;
+  font-weight: 700;
+  font-family: "Helvetica Neue Bold", sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+small {
+  font-size: 12px;
+}
+
+.suites__important {
+  height: 100%;
+  padding-left: 50px;
+  border-left: 0.5px solid #fff;
+}
+
+.suites__important p {
+  color: #bdbdbd !important;
+  background-color: transparent !important;
+}
+
+.destaque.outas {
+  background-image: none;
+  padding-top: 0;
+}
+
+.destaque.outas::before {
+  content: none;
+}
+
+.motel.internas .motel__content--btn {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .topo {
+    height: 250px;
+  }
+
+  .topo__content--text {
+    padding-top: 25%;
+  }
+
+  .topo__content--text h2 {
+    font-size: 32px;
+  }
+
+  .internas {
+    padding: 60px 0;
+  }
+
+  .suites__internas {
+    grid-template-columns: 1fr;
+    padding: 0 10px;
+  }
+
+  .suites__internas .destaque__slide {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .suites__internas .destaque__slide--image {
+    height: 360px;
+  }
+
+  #cortesias .row,
+  #descontos .row {
+    grid-template-columns: 1fr;
+    margin: 0;
+    gap: 30px;
+  }
+
+  .localizacao.internas {
+    padding-bottom: 30px;
+  }
+
+  .internas.localizacao .localizacao__content .localizacao__content--text {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .internas.localizacao .localizacao__content .localizacao__content--text h3 {
+    margin-bottom: 30px;
+    font-size: 16px;
+  }
+
+  .internas .reservas-op a {
+    padding: 40px 25px;
+  }
+
+  .suit-int.internas .suites__content--itens {
+    grid-template-columns: 1fr;
+    padding: 40px 10px 15px;
+  }
+
+  .suites__important {
+    padding: 0;
+    border: none;
+  }
+
+  .destaque.outas {
+    padding-bottom: 90px;
+  }
+
+  .suites__slide--itens {
+    height: auto;
+  }
+}

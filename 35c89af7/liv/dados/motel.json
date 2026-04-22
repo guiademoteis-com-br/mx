@@ -1,0 +1,119 @@
+{
+    "name": "Liv",
+    "slug": "liv",
+    "review": "<div><span style=\"font-size: 15.2px;\"><b>Lorem ipsum dolor sit amet consectetur</b>, adipisicing elit. Tenetur vel odit magnam aperiam blanditiis nostrum eligendi quod! Excepturi, quibusdam quas eaque ratione molestias veritatis temporibus possimus quo libero, culpa consequatur?</span></div><div><span style=\"font-size: 15.2px;\"><br></span></div><div><span style=\"font-size: 15.2px;\">Lorem ipsum dolor sit, amet consectetur <i>adipisicing elit</i>. Earum repudiandae, dolores amet sed nostrum fugiat molestiae voluptates rem autem, ad ex ipsa maxime voluptatibus nobis quas! Placeat impedit modi vero.</span></div>",
+    "primary_color": "#89378b",
+    "phone": "(99) 9999-9999",
+    "whatsapp": "(99) 9999-9999",
+    "email": "eleazar.gm@guiademoteis.com.br",
+    "zip_code": "04100",
+    "state": "Ciudad de México",
+    "city": "Coyoacán",
+    "neighborhood": "Del Carmen",
+    "street": "Alguma Rua mexicana",
+    "ext_number": "123",
+    "int_number": "A",
+    "facebook_link": "https://clickmoteis.com.br/SAMzinho/admin/",
+    "instagram_link": "https://clickmoteis.com.br/SAMzinho/admin/",
+    "google_maps_link": "https://www.google.com/maps/dir//LIV+Motel+e+Hotel+-+Rod.+Marechal+Rondon,+KM+555+-+Guararapes,+SP,+16700-000/@-21.209724,-59.6263988,6z/data=!4m20!1m11!3m10!1s0x9496e1eb39284437:0xd1b9c4dbd0c4ccaf!2sLIV+Motel+e+Hotel!5m2!4m1!1i2!8m2!3d-21.209724!4d-50.661555!15sChFsaXYgbW90ZWwgZSBob3RlbJIBCmxvdmVfaG90ZWzgAQA!16s%2Fg%2F11jp59jsd_!4m7!1m0!1m5!1m1!1s0x9496e1eb39284437:0xd1b9c4dbd0c4ccaf!2m2!1d-50.661555!2d-21.209724?entry=ttu&g_ep=EgoyMDI2MDQxOS4wIKXMDSoASAFQAw%3D%3D",
+    "facade_image": "conteudo/imagens/facade.jpg",
+    "banner_mobile": "conteudo/imagens/banner-mobile.jpg",
+    "banner_desktop": "conteudo/imagens/banner-desktop.jpg",
+    "logo": "conteudo/imagens/logo.svg",
+    "favicon": "conteudo/imagens/favicon.svg",
+    "suites": [
+        {
+            "slug": "premium",
+            "sort_order": "0",
+            "name": "Premium",
+            "items": [
+                "Tv",
+                "Wifi",
+                "Piscina",
+                "Netflix"
+            ],
+            "important_infos": [
+                "Para 2 pessoas",
+                "Lorem ipsum dolor sit amet consectetur"
+            ],
+            "cover_image": "conteudo/imagens/premium-1.jpg",
+            "first_price": "200",
+            "images": [
+                "conteudo/imagens/premium-1.jpg",
+                "conteudo/imagens/premium-2.jpg"
+            ],
+            "prices": [
+                {
+                    "period": [
+                        4,
+                        12
+                    ],
+                    "weekday": [
+                        "Sábado",
+                        "Sexta-feira",
+                        "Quinta-feira",
+                        "Domingo",
+                        "Segunda-feira",
+                        "Terça-feira",
+                        "Quarta-feira"
+                    ],
+                    "description": "Promoção",
+                    "value": "200.00"
+                },
+                {
+                    "period": [
+                        12,
+                        16,
+                        18
+                    ],
+                    "weekday": [
+                        "Domingo",
+                        "Sábado"
+                    ],
+                    "description": "Hora em dobro",
+                    "value": "400.00"
+                }
+            ]
+        },
+        {
+            "slug": "light",
+            "sort_order": "1",
+            "name": "Light",
+            "items": [
+                "Tv",
+                "Wifi"
+            ],
+            "important_infos": [
+                "Lorem ipsum dolor sit amet consectetur",
+                "Lorem ipsum dolor"
+            ],
+            "cover_image": "conteudo/imagens/light-1.jpg",
+            "first_price": "500",
+            "images": [
+                "conteudo/imagens/light-1.jpg",
+                "conteudo/imagens/light-2.jpg",
+                "conteudo/imagens/light-3.jpg"
+            ],
+            "prices": [
+                {
+                    "period": [
+                        2,
+                        4,
+                        6
+                    ],
+                    "weekday": [
+                        "Domingo",
+                        "Segunda-feira",
+                        "Terça-feira",
+                        "Quarta-feira",
+                        "Sábado",
+                        "Sexta-feira",
+                        "Quinta-feira"
+                    ],
+                    "description": "Alguma desc pequena",
+                    "value": "500.00"
+                }
+            ]
+        }
+    ]
+}
