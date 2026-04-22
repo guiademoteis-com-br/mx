@@ -23,8 +23,41 @@
     "favicon": "conteudo/imagens/favicon.svg",
     "suites": [
         {
-            "slug": "premium",
+            "slug": "suite-teste-para-exclus-o-em-massa-3",
             "sort_order": "0",
+            "name": "Suite teste para exclusão em massa 3",
+            "items": [],
+            "important_infos": [],
+            "cover_image": null,
+            "first_price": null,
+            "images": [],
+            "prices": []
+        },
+        {
+            "slug": "suite-teste-para-exclus-o-em-massa-2",
+            "sort_order": "1",
+            "name": "Suite teste para exclusão em massa 2",
+            "items": [],
+            "important_infos": [],
+            "cover_image": null,
+            "first_price": null,
+            "images": [],
+            "prices": []
+        },
+        {
+            "slug": "suite-teste-para-exclus-o-em-massa-1",
+            "sort_order": "2",
+            "name": "Suite teste para exclusão em massa 1",
+            "items": [],
+            "important_infos": [],
+            "cover_image": null,
+            "first_price": null,
+            "images": [],
+            "prices": []
+        },
+        {
+            "slug": "premium",
+            "sort_order": "3",
             "name": "Premium",
             "items": [
                 "Tv",
@@ -77,7 +110,7 @@
         },
         {
             "slug": "light",
-            "sort_order": "1",
+            "sort_order": "4",
             "name": "Light",
             "items": [
                 "Tv",
