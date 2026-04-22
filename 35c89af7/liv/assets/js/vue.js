@@ -113,7 +113,7 @@ app.component('gm-informacoes-importantes', {
 
 app.component('gm-redes', {
     setup() {
-        return { store: Vue.inject('store'), formatPriceValue };
+        return { store: Vue.inject('store') };
     },
     template: await loadTemplate('gm-redes'),
 });
@@ -127,35 +127,35 @@ app.component('gm-suites', {
 
 app.component('gm-motel', {
     setup() {
-        return { store: Vue.inject('store'), formatPriceValue };
+        return { store: Vue.inject('store') };
     },
     template: await loadTemplate('gm-motel'),
 });
 
 app.component('gm-endereco', {
     setup() {
-        return { store: Vue.inject('store'), formatPriceValue };
+        return { store: Vue.inject('store') };
     },
     template: await loadTemplate('gm-endereco'),
 });
 
 app.component('gm-contatos', {
     setup() {
-        return { store: Vue.inject('store'), formatPriceValue };
+        return { store: Vue.inject('store') };
     },
     template: await loadTemplate('gm-contatos'),
 });
 
 app.component('gm-lista-suites', {
     setup() {
-        return { store: Vue.inject('store'), formatPriceValue };
+        return { store: Vue.inject('store') };
     },
     template: await loadTemplate('gm-lista-suites'),
 });
 
 app.component('gm-footer', {
     setup() {
-        return { store: Vue.inject('store'), formatPriceValue };
+        return { store: Vue.inject('store') };
     },
     template: await loadTemplate('gm-footer'),
 });

@@ -5,9 +5,10 @@
     bottom: 0;
     left: 0;
     padding: 3px 2px 3px 20px;
-    background: #231f20;
+    background: var(--color-secondary);
     transition: transform 600ms ease, background 0.1s;
     will-change: transform;
+    box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.10);
   }
 
   .gm-headroom-bottom {
@@ -66,8 +67,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgba(203, 160, 82, 1);
-    color: #000;
+    background: var(--color-primary);
+    color: #ffffff;
     gap: 5px;
   }
 
@@ -84,7 +85,7 @@
     bottom: 0;
     right: 0;
     left: 0;
-    background: rgba(0, 0, 0, 1);
+    background: #ffffff;
   }
 
   .overlay__nav--bg {
@@ -128,7 +129,7 @@
     height: 1.84px;
     border-radius: 99px;
     margin-right: 24px;
-    background-color: #bdbdbd;
+    background-color: var(--color-primary);
   }
 
   .title-header h2::after {
@@ -137,7 +138,7 @@
   }
 
   .destaque .title-header h2::before {
-    background-color: rgba(0, 0, 0, 1);
+    background-color: var(--color-primary);
   }
 
   /* BANNER */
@@ -201,8 +202,8 @@
   }
 
   .destaque__btn a {
-    background: rgba(0, 0, 0, 1);
-    color: rgba(203, 160, 82, 1);
+    background: var(--color-primary);
+    color: #ffffff;
     padding: 14px 35px;
   }
 
@@ -300,9 +301,10 @@
   }
 
   .local__content--text {
-    background: rgba(0, 0, 0, 1);
+    background: var(--color-secondary);
     margin-top: 0;
     border-radius: 0;
+    padding-bottom: 18px;
   }
 
   .local__content--adress {
@@ -311,10 +313,6 @@
   }
 
   /* FOOTER */
-  .footer {
-    background: rgba(0, 0, 0, 1);
-  }
-
   .mob-redes {
     text-align: center;
     padding: 0 12px;
@@ -372,8 +370,8 @@
   }
 
   .footer__content--mobile li a.btn-borda {
-    border: 1px solid rgba(255, 255, 255, 1);
-    color: #fff;
+    border: 1px solid var(--color-primary);
+    color: var(--color-primary);
   }
 
   .footer-redes {
@@ -383,7 +381,7 @@
 
   .footer-redes-icons a {
     font-size: 26px;
-    color: rgba(203, 160, 82, 1);
+    color: var(--color-primary);
     margin: 0 calc(26px / 2);
   }
 
@@ -393,9 +391,5 @@
     font-weight: 400;
     line-height: 11.94px;
     margin-top: 12px;
-  }
-
-  .footer__assinatura {
-    background: rgba(35, 31, 32, 1);
   }
 }

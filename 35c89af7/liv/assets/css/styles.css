@@ -1,8 +1,15 @@
+:root {
+  --color-primary: #204b52;
+  --color-secondary: #ddb8d0;
+  --color-bg-motel: #f8f9fb;
+  --color-bg-local: #ffffff;
+}
+
 html,
 body {
   font-family: "Helvetica Neue", sans-serif;
-  background: #000;
-  color: #bdbdbd;
+  background: #fff;
+  color: #000;
   overflow-x: hidden;
   scrollbar-width: thin;
 }
@@ -55,8 +62,8 @@ a:hover {
 
 .btn-borda,
 .btn-borda:hover {
-  border: 1.45px solid rgba(237, 234, 235, 1);
-  color: #edeaeb;
+  border: 1.45px solid #000;
+  color: #000;
 }
 
 .flickity-button {
@@ -69,7 +76,7 @@ a:hover {
 }
 
 .title-header h2 {
-  color: #bdbdbd;
+  color: var(--color-primary);
   font-weight: 700;
   font-size: 30px;
   display: flex;
@@ -83,8 +90,8 @@ a:hover {
   display: block;
   width: 29px;
   height: 29px;
-  background: #bdbdbd;
-  color: #0e0e0e;
+  background: var(--color-primary);
+  color: var(--color-bg-motel);
   font-size: 30px;
   font-weight: 700;
   letter-spacing: 0.9em;
@@ -106,10 +113,9 @@ a:hover {
   height: 1.84px;
   border-radius: 99px;
   margin-left: 6.75px;
-  background-color: #bdbdbd;
+  background-color: var(--color-primary);
 }
 
-/* MENU */
 /* MENU */
 #menu {
   position: fixed;
@@ -161,6 +167,7 @@ a:hover {
   width: 24px;
   height: 3px;
   background: #fff;
+  box-shadow: 0 0 8px rgba(0, 0, 0, .5);
   border-radius: 50px;
   cursor: pointer;
   -webkit-transition: all 0.35s ease;
@@ -202,7 +209,7 @@ a:hover {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-color: rgba(0, 0, 0, 1);
+  background-color: var(--color-secondary);
 }
 
 .overlay__nav--list {
@@ -233,7 +240,7 @@ a:hover {
 }
 
 .menu__logo--redes a {
-  color: #bdbdbd;
+  color: var(--color-primary);
   font-size: 28px;
   text-align: center;
   margin: 0 5px;
@@ -256,7 +263,7 @@ a:hover {
 }
 
 .overlay.active ul li a {
-  color: #bdbdbd;
+  color: #000;
   font-size: 18px;
   font-weight: 500;
   line-height: 21.98px;
@@ -406,16 +413,16 @@ a:hover {
 }
 
 .destaque .title-header h2 {
-  color: rgba(0, 0, 0, 1);
+  color: var(--color-primary);
 }
 
 .destaque .title-header h2 span {
-  background-color: rgba(0, 0, 0, 1);
-  color: rgba(203, 160, 82, 1);
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
 }
 
 .destaque .title-header h2::after {
-  background-color: rgba(0, 0, 0, 1);
+  background-color: var(--color-primary);
 }
 
 .destaque::after {
@@ -426,7 +433,7 @@ a:hover {
   top: 0;
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(rgba(203, 160, 82, 1));
+  background-color: var(--color-secondary);
   background-position: center;
   background-size: contain;
 }
@@ -511,7 +518,7 @@ a:hover {
 
 .destaque__slide--bottom {
   position: relative;
-  background: #000000;
+  background: var(--color-primary);
   padding: 10px 20px;
   border-radius: 5px;
   display: none;
@@ -540,7 +547,7 @@ a:hover {
 /* MOTEL */
 .motel {
   padding: 43px 0 40px;
-  background-image: url(../images/motel-bg.png);
+  background-color: var(--color-bg-motel);
   background-position: center;
   background-size: contain;
 }
@@ -558,10 +565,11 @@ a:hover {
   line-height: 37.55px;
   margin-bottom: 6px;
   text-transform: uppercase;
+  color: var(--color-primary);
 }
 
 .motel__content--text p {
-  color: #cba052;
+  color: var(--color-secondary);
   font-weight: 400;
   font-style: italic;
   font-size: 16px;
@@ -573,7 +581,7 @@ a:hover {
 }
 
 .motel__content--subtext p {
-  color: #bdbdbd;
+  color: #000;
   line-height: 18.38px;
   font-style: normal;
 }
@@ -600,7 +608,7 @@ a:hover {
 
 .motel__content--image p {
   margin-top: 20px;
-  color: #cba052;
+  color: var(--color-secondary);
   line-height: 18.38px;
   font-weight: 400;
 }
@@ -609,8 +617,16 @@ a:hover {
   padding-top: 90px;
 }
 
+.motel__content--btn svg circle {
+  stroke: var(--color-primary);
+}
+
+.motel__content--btn svg path{
+  fill: var(--color-primary);
+}
+
 .motel__content--btn p {
-  color: #bdbdbd;
+  color: #000;
   margin-top: 10px;
 }
 
@@ -699,13 +715,18 @@ a:hover {
 /* LOCAL */
 .local {
   padding: 45px 0 80px;
+  background: var(--color-bg-local);
+}
+
+.local__header .title span {
+  color: var(--color-bg-local);
 }
 
 .local__content {
   width: 100%;
   height: 402px;
   position: relative;
-  background-image: linear-gradient(gainsboro), url(../images/mapa.jpg);
+  background-image: linear-gradient(gainsboro);
   background-position: center;
   background-size: cover;
   margin-top: 88px;
@@ -729,7 +750,7 @@ a:hover {
   justify-content: center;
   margin-top: -4px;
   position: relative;
-  background: rgba(35, 31, 32, 1);
+  background: var(--color-secondary);
 }
 
 .local__content--adress {
@@ -742,10 +763,11 @@ a:hover {
   font-size: 14px;
   font-weight: 400;
   line-height: 13.93px;
+  color: #000;
 }
 
 .local__content--btn {
-  background: rgba(203, 160, 82, 1);
+  background: var(--color-primary);
   padding: 10px 20px;
   border-radius: 0 5px 5px 0;
   display: flex;
@@ -758,16 +780,20 @@ a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: rgba(0, 0, 0, 1);
+  color: #ffffff;
   font-weight: 500;
   font-size: 16px;
   line-height: 15.81px;
 }
 
+.local__content--btn img{
+  filter: invert();
+}
+
 /* FOOTER */
 .footer {
   position: relative;
-  background-color: #231f20;
+  background-color: #f8f9fb;
 }
 
 .footer::before {
@@ -804,13 +830,12 @@ a:hover {
 .footer-border {
   width: 1px;
   height: auto;
-  background: rgba(189, 189, 189, 0.3);
 }
 
 .footer__content h2,
 .footer__itens li a,
 .footer-contact h3 {
-  color: #bdbdbd;
+  color: #000;
   font-size: 18px;
   font-weight: 500;
   margin-bottom: 13px;
@@ -829,11 +854,15 @@ a:hover {
   font-weight: 400;
   font-size: 18px;
   line-height: 17.91px;
-  color: #bdbdbd;
+  color: #000;
 }
 
 .footer-contact h3 {
   margin-bottom: 11px;
+}
+
+.footer-contact h3 svg {
+  color: var(--color-primary);
 }
 
 .footer-contact h3:not(:first-child) {
@@ -841,7 +870,7 @@ a:hover {
 }
 
 .footer-contact p {
-  color: #fff;
+  color: #000;
   font-size: 18px;
   font-weight: 500;
   line-height: 17.78px;
@@ -864,7 +893,7 @@ a:hover {
   font-weight: 400;
   font-size: 22px;
   line-height: 20px;
-  color: #cba052;
+  color: var(--color-primary);
   display: flex;
   align-items: center;
 }
@@ -877,18 +906,18 @@ a:hover {
   position: relative;
   z-index: 1;
   font-family: "Titillium Web", sans-serif;
-  background: #000;
+  background: var(--color-primary);
   padding: 20px;
   font-weight: 600;
   font-size: 12px;
   text-transform: uppercase;
-  color: rgba(226, 224, 225, 1);
+  color: #fff;
 }
 
 .footer__assinatura a {
   font-weight: 600;
   font-size: 12px;
-  color: rgba(226, 224, 225, 1);
+  color: #fff;
   text-transform: uppercase;
 }
 
@@ -897,36 +926,4 @@ a:hover {
   right: 37px;
   bottom: 30px;
   z-index: 99;
-}
-
-.suite-prices-today {
-  color: #cba052;
-}
-
-.suite-prices-nav {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2px;
-  margin-block: 16px 6px;
-}
-
-.suite-prices-label {
-  border: 1px solid #fff;
-  padding: .5rem 1rem;
-  color: #fff;
-  text-align: center;
-  cursor: pointer;
-  transition: .4s ease-in-out;
-  max-width: 108px;
-}
-
-.suite-prices-label:has(:checked) {
-  flex: 1.5;
-  background: #cba052;
-  border-color: #cba052;
-  color: #000;
-}
-
-.suite-prices-label input {
-  display: none;
 }

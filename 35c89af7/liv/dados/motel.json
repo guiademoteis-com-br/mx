@@ -1,8 +1,9 @@
 {
     "name": "Liv",
     "slug": "liv",
-    "review": "<div><span style=\"font-size: 15.2px;\"><b>Lorem ipsum dolor sit amet consectetur</b>, adipisicing elit. Tenetur vel odit magnam aperiam blanditiis nostrum eligendi quod! Excepturi, quibusdam quas eaque ratione molestias veritatis temporibus possimus quo libero, culpa consequatur?</span></div><div><span style=\"font-size: 15.2px;\"><br></span></div><div><span style=\"font-size: 15.2px;\">Lorem ipsum dolor sit, amet consectetur <i>adipisicing elit</i>. Earum repudiandae, dolores amet sed nostrum fugiat molestiae voluptates rem autem, ad ex ipsa maxime voluptatibus nobis quas! Placeat impedit modi vero.</span></div>",
+    "review": "<div><span style=\"font-size: 15.2px;\"><b>Lorem ipsum dolor sit amet</b>, adipisicing elit. Tenetur vel odit magnam aperiam blanditiis nostrum eligendi quod! Excepturi, quibusdam quas eaque ratione molestias veritatis temporibus possimus quo libero, culpa consequatur?</span></div><div><span style=\"font-size: 15.2px;\"><br></span></div><div><span style=\"font-size: 15.2px;\">Lorem ipsum dolor sit, amet consectetur <i>adipisicing elit</i>. Earum repudiandae, dolores amet sed nostrum fugiat molestiae voluptates rem autem, ad ex ipsa maxime voluptatibus nobis quas! Placeat impedit modi vero.</span></div>",
     "primary_color": "#89378b",
+    "secondary_color": "#a45519",
     "phone": "(99) 9999-9999",
     "whatsapp": "(99) 9999-9999",
     "email": "eleazar.gm@guiademoteis.com.br",
@@ -23,41 +24,8 @@
     "favicon": "conteudo/imagens/favicon.svg",
     "suites": [
         {
-            "slug": "suite-teste-para-exclus-o-em-massa-3",
-            "sort_order": "0",
-            "name": "Suite teste para exclusão em massa 3",
-            "items": [],
-            "important_infos": [],
-            "cover_image": null,
-            "first_price": null,
-            "images": [],
-            "prices": []
-        },
-        {
-            "slug": "suite-teste-para-exclus-o-em-massa-2",
-            "sort_order": "1",
-            "name": "Suite teste para exclusão em massa 2",
-            "items": [],
-            "important_infos": [],
-            "cover_image": null,
-            "first_price": null,
-            "images": [],
-            "prices": []
-        },
-        {
-            "slug": "suite-teste-para-exclus-o-em-massa-1",
-            "sort_order": "2",
-            "name": "Suite teste para exclusão em massa 1",
-            "items": [],
-            "important_infos": [],
-            "cover_image": null,
-            "first_price": null,
-            "images": [],
-            "prices": []
-        },
-        {
             "slug": "premium",
-            "sort_order": "3",
+            "sort_order": 0,
             "name": "Premium",
             "items": [
                 "Tv",
@@ -110,7 +78,7 @@
         },
         {
             "slug": "light",
-            "sort_order": "4",
+            "sort_order": 1,
             "name": "Light",
             "items": [
                 "Tv",

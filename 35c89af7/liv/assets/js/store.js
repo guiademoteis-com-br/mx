@@ -8,6 +8,7 @@ export const store = reactive({
     slug: null,
     review: null,
     primary_color: null,
+    secondary_color: null,
     phone: null,
     whatsapp: null,
     whatsapp_link: null,

@@ -48,7 +48,7 @@
 
 /* SUÍTES */
 .suites.internas {
-  background-image: linear-gradient(rgba(203, 160, 82, 1));
+  background-color: var(--color-secondary);
   background-position: center;
 }
 
@@ -197,13 +197,12 @@
 }
 
 .suite-prices-box tr {
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid #000;
 }
 
 .suite-prices-box td {
   text-align: left;
   padding: 10px 0;
-  color: #bdbdbd;
   font-size: 16px;
   letter-spacing: 0.03em;
   vertical-align: middle;
@@ -222,7 +221,7 @@
   font-size: 1.125rem;
   font-weight: 700;
   font-family: "Helvetica Neue Bold", sans-serif;
-  color: #fff;
+  color: var(--color-primary);
   text-transform: uppercase;
   margin-bottom: 16px;
 }
@@ -237,11 +236,6 @@ small {
   border-left: 0.5px solid #fff;
 }
 
-.suites__important p {
-  color: #bdbdbd !important;
-  background-color: transparent !important;
-}
-
 .destaque.outas {
   background-image: none;
   padding-top: 0;
@@ -251,7 +245,43 @@ small {
   content: none;
 }
 
+.motel.internas {
+  background-color: unset;
+}
+
 .motel.internas .motel__content--btn {
+  display: none;
+}
+
+.suite-prices-today {
+  color: #000;
+}
+
+.suite-prices-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px;
+  margin-block: 16px 6px;
+}
+
+.suite-prices-label {
+  border: 1px solid var(--color-primary);
+  padding: .5rem 1rem;
+  color: #000;
+  text-align: center;
+  cursor: pointer;
+  transition: .4s ease-in-out;
+  max-width: 108px;
+}
+
+.suite-prices-label:has(:checked) {
+  flex: 1.5;
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+  color: #ffffff;
+}
+
+.suite-prices-label input {
   display: none;
 }
 
