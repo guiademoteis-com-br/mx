@@ -23,8 +23,34 @@
     "favicon": null,
     "suites": [
         {
-            "slug": "premium",
+            "slug": "light",
             "sort_order": "0",
+            "name": "Light",
+            "items": [],
+            "important_infos": [],
+            "cover_image": "conteudo/imagens/light-1.jpg",
+            "first_price": "300",
+            "images": [
+                "conteudo/imagens/light-1.jpg",
+                "conteudo/imagens/light-2.jpg",
+                "conteudo/imagens/light-3.jpg"
+            ],
+            "prices": [
+                {
+                    "period": [
+                        2
+                    ],
+                    "weekday": [
+                        "Quinta-feira"
+                    ],
+                    "description": "2 pessoas",
+                    "value": "300.00"
+                }
+            ]
+        },
+        {
+            "slug": "premium",
+            "sort_order": "1",
             "name": "Premium",
             "items": [],
             "important_infos": [],
