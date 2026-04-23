@@ -1,0 +1,129 @@
+{
+    "name": "Loop",
+    "slug": "loop",
+    "asset_version": "e019ccb9",
+    "review": "<div><span style=\"font-size: 15.2px;\">Localizado estrategicamente no Parque São Jorge, o Motel Loop se destaca como uma opção premium para quem busca uma experiência única e sofisticada.</span></div><div><span style=\"font-size: 15.2px;\">Com cinco categorias de suítes, nos tornamos referência em qualidade, oferecendo um excelente custo-benefício e opções para pernoites de longa duração.&nbsp;</span></div><div><span style=\"font-size: 15.2px;\"><br></span></div><div><span style=\"font-size: 15.2px;\">Conheça essa combinação equilibrada entre qualidade, conforto e sofisticação e viva uma experiência inesquecível.</span></div>",
+    "primary_color": "#E6007E",
+    "secondary_color": "#101010",
+    "phone": "(11) 2225-2181",
+    "whatsapp": "(11) 92193-0504",
+    "email": "loopmotel9@gmail.com",
+    "zip_code": "04100",
+    "state": "Ciudad de México",
+    "city": "Coyoacán",
+    "neighborhood": "Del Carmen",
+    "street": "Rua bonita mexicana",
+    "ext_number": "123",
+    "int_number": "A",
+    "facebook_link": "https://www.facebook.com/loopmotel",
+    "instagram_link": "https://www.instagram.com/loopmotel",
+    "google_maps_link": "https://www.google.com/maps/dir//Loop+Motel+-+Rua+Hely+Lopes+Meirelles,+1609+-+Vila+Moreira,+S%C3%A3o+Paulo+-+SP,+03088-000/@-23.5247742,-46.5632477,17z/data=!4m19!1m10!3m9!1s0x94ce5fa2d30035b1:0xc919307b2f3ac20b!2sLoop+Motel!5m2!4m1!1i2!8m2!3d-23.5247742!4d-46.5606728!16s%2Fg%2F11y3mm4zk0!4m7!1m0!1m5!1m1!1s0x94ce5fa2d30035b1:0xc919307b2f3ac20b!2m2!1d-46.5606728!2d-23.5247742?entry=ttu&g_ep=EgoyMDI2MDQyMC4wIKXMDSoASAFQAw%3D%3D",
+    "facade_image": "conteudo/imagens/facade.jpg",
+    "banner_mobile": "conteudo/imagens/banner-mobile.jpg",
+    "banner_desktop": "conteudo/imagens/banner-desktop.jpg",
+    "logo": "conteudo/imagens/logo.ico",
+    "favicon": "conteudo/imagens/favicon.ico",
+    "suites": [
+        {
+            "slug": "soft",
+            "sort_order": "0",
+            "name": "Soft",
+            "items": [
+                "Item A",
+                "Item B",
+                "Item C"
+            ],
+            "important_infos": [
+                "Info A",
+                "Info B"
+            ],
+            "cover_image": "conteudo/imagens/soft-1.jpg",
+            "first_price": "200",
+            "images": [
+                "conteudo/imagens/soft-1.jpg",
+                "conteudo/imagens/soft-2.jpg",
+                "conteudo/imagens/soft-3.jpg"
+            ],
+            "prices": [
+                {
+                    "period": [
+                        2,
+                        4,
+                        6
+                    ],
+                    "weekday": [
+                        "Sábado",
+                        "Sexta-feira",
+                        "Quinta-feira"
+                    ],
+                    "description": "Promo",
+                    "value": "200.00"
+                },
+                {
+                    "period": [
+                        8,
+                        10,
+                        12
+                    ],
+                    "weekday": [
+                        "Domingo",
+                        "Segunda-feira",
+                        "Terça-feira",
+                        "Quarta-feira",
+                        "Sábado",
+                        "Sexta-feira",
+                        "Quinta-feira"
+                    ],
+                    "description": "Desc pequena",
+                    "value": "400.00"
+                }
+            ]
+        },
+        {
+            "slug": "popular-carrossel-1",
+            "sort_order": "1",
+            "name": "Popular Carrossel #1",
+            "items": [],
+            "important_infos": [],
+            "cover_image": "conteudo/imagens/popular-carrossel-1-1.jpeg",
+            "first_price": null,
+            "images": [
+                "conteudo/imagens/popular-carrossel-1-1.jpeg",
+                "conteudo/imagens/popular-carrossel-1-2.jpeg"
+            ],
+            "prices": []
+        },
+        {
+            "slug": "popular-carrossel-2",
+            "sort_order": "2",
+            "name": "Popular Carrossel #2",
+            "items": [],
+            "important_infos": [],
+            "cover_image": "conteudo/imagens/popular-carrossel-2-1.jpeg",
+            "first_price": null,
+            "images": [
+                "conteudo/imagens/popular-carrossel-2-1.jpeg",
+                "conteudo/imagens/popular-carrossel-2-2.jpeg",
+                "conteudo/imagens/popular-carrossel-2-3.jpeg",
+                "conteudo/imagens/popular-carrossel-2-4.jpeg"
+            ],
+            "prices": []
+        },
+        {
+            "slug": "popular-carrossel-3",
+            "sort_order": "3",
+            "name": "Popular Carrossel #3",
+            "items": [],
+            "important_infos": [],
+            "cover_image": "conteudo/imagens/popular-carrossel-3-1.jpeg",
+            "first_price": null,
+            "images": [
+                "conteudo/imagens/popular-carrossel-3-1.jpeg",
+                "conteudo/imagens/popular-carrossel-3-2.jpeg",
+                "conteudo/imagens/popular-carrossel-3-3.jpeg",
+                "conteudo/imagens/popular-carrossel-3-4.jpeg"
+            ],
+            "prices": []
+        }
+    ]
+}

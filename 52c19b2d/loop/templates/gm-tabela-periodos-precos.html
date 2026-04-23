@@ -1,0 +1,26 @@
+<div class="suite-prices-box">
+    <h3>Tatifas para: <span class="suite-prices-today">{{ activePriceDayLabel }}</span></h3>
+    <nav class="suite-prices-nav">
+        <label class="suite-prices-label" v-for="day in priceWeekdayOptions" :key="day.value">
+            {{ day.label }}
+            <input
+                type="radio"
+                name="suite-price-day"
+                :value="day.value"
+                v-model="activePriceWeekday"
+            >
+        </label>
+    </nav>
+    <table>
+        <tbody>
+            <tr v-for="(price, index) in activeSuitePrices" :key="activePriceWeekday + '-' + index">
+                <td>
+                    {{ price.period }} {{ periodLabel(price.period) }}
+                    <br />
+                    <small v-if="price.description">{{ price.description }}</small>
+                </td>
+                <td>{{ formatPriceValue(price.value) }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

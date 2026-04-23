@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="El más joven y moderno de las 3 fronteras. Buscamos excelencia, calidad total satisfacción de nuestros clientes."
+        />
+        <title></title>
+        <link rel="stylesheet" href="assets/css/master.css?v=e019ccb9" />
+        <link href="https://fonts.cdnfonts.com/css/helvetica-neue-55" rel="stylesheet" />
+
+        <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css" />
+        <link rel="stylesheet" href="https://unpkg.com/flickity-fade@1/flickity-fade.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+    </head>
+
+    <body>
+        <main id="app" v-cloak>
+            <gm-header></gm-header>
+
+            <section class="banner">
+                <div class="banner__slider">
+                    <div class="banner__content">
+                        <div class="banner__content--image">
+                            <img
+                                :src="store.banner_mobile"
+                                class="img-fluid d-sm-block d-md-block d-lg-none"
+                                alt="banner"
+                            />
+                            <img
+                                :src="store.banner_desktop"
+                                class="img-fluid d-none d-lg-block"
+                                alt="banner"
+                            />
+                        </div>
+                    </div>
+                </div>
+                <div class="banner__explore">
+                    <svg width="12" height="19" viewBox="0 0 12 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M0.251051 13.5652C-0.0836844 13.228 -0.0836843 12.6811 0.251051 12.3439C0.585786 12.0066 1.1285 12.0066 1.46323 12.3439L5.14286 16.0514L5.14286 0.863637C5.14286 0.386663 5.52661 2.41576e-07 6 2.62268e-07C6.47339 2.82961e-07 6.85714 0.386663 6.85714 0.863637L6.85714 16.0514L10.5368 12.3439C10.8715 12.0066 11.4142 12.0066 11.7489 12.3439C12.0837 12.6811 12.0837 13.228 11.7489 13.5652L6.60609 18.747C6.27136 19.0843 5.72864 19.0843 5.39391 18.747L0.251051 13.5652Z"
+                            fill="white"
+                        ></path>
+                    </svg>
+                </div>
+            </section>
+
+            <section class="destaque">
+                <div class="destaque__content">
+                    <div class="motel__header title-header">
+                        <h2 class="title">
+                            <span><strong>S</strong> </span>uites
+                        </h2>
+                    </div>
+                    <div class="container-fluid">
+                        <div class="destaque__flickity">
+                            <gm-suites></gm-suites>
+                        </div>
+                    </div>
+                    <div class="destaque__btn d-sm-block d-md-block d-lg-none">
+                        <a href="suites.html" class="btn">Ver todas las suites</a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="motel" class="motel">
+                <div class="motel__header title-header">
+                    <h2 class="title">
+                        <span><strong>S</strong> </span>obre el Motel
+                    </h2>
+                </div>
+                <div class="container">
+                    <gm-motel></gm-motel>
+                </div>
+            </section>
+
+            <section id="local" class="local">
+                <div class="local__header title-header">
+                    <h2 class="title">
+                        <span><strong>D</strong> </span>irección
+                    </h2>
+                </div>
+                <div class="container">
+                    <div class="local__content">
+                        <div class="local__content--image col-md-12">
+                            <iframe
+                                v-if="store.google_maps_embed_src"
+                                :src="store.google_maps_embed_src"
+                                width="100%"
+                                height="100%"
+                                style="border: 0"
+                                allowfullscreen=""
+                                loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"
+                            >
+                            </iframe>
+                        </div>
+                    </div>
+                    <div class="local__content--text">
+                        <div class="local__content--adress col-md-7">
+                            <h3>
+                                <gm-endereco></gm-endereco>
+                            </h3>
+                        </div>
+                        <div class="local__content--btn col-md-5">
+                            <a v-if="store.google_maps_link" :href="store.google_maps_link" target="_blank">
+                                Trazar ruta
+                                <span><img src="assets/images/icones/seta.svg?v=e019ccb9" alt="flecha" /></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <gm-footer></gm-footer>
+        </main>
+
+        <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+        <script src="assets/js/vue.js?v=e019ccb9" type="module"></script>
+
+        <script src="assets/bootstrap/bootstrap.bundle.min.js?v=e019ccb9"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+        <script src="https://unpkg.com/flickity-fade@1/flickity-fade.js"></script>
+        <script src="assets/js/scripts.js?v=e019ccb9"></script>
+    </body>
+</html>
