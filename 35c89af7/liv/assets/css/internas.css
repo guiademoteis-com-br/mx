@@ -48,7 +48,7 @@
 
 /* SUÍTES */
 .suites.internas {
-  background-color: var(--color-secondary);
+  background-color: var(--color-bg-destaque);
   background-position: center;
 }
 
@@ -221,7 +221,7 @@
   font-size: 1.125rem;
   font-weight: 700;
   font-family: "Helvetica Neue Bold", sans-serif;
-  color: var(--color-primary);
+  color: #000;
   text-transform: uppercase;
   margin-bottom: 16px;
 }
@@ -246,7 +246,7 @@ small {
 }
 
 .motel.internas {
-  background-color: unset;
+  background-color: var(--color-bg-motel);
 }
 
 .motel.internas .motel__content--btn {
@@ -254,7 +254,7 @@ small {
 }
 
 .suite-prices-today {
-  color: #000;
+  color: var(--color-primary);
 }
 
 .suite-prices-nav {

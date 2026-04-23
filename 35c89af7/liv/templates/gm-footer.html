@@ -47,7 +47,8 @@
                 <ul>
                     <li>
                         <a
-                            href="https://www.google.com.ar/maps/dir//G82V%2B82J+Motel+Castle+VIP,+Cd.+del+Este+45267,+Paraguay/@-25.4997471,-54.6592345,654m/data=!3m1!1e3!4m8!4m7!1m0!1m5!1m1!1s0x94f685129d23e11b:0x687b19e4cedfbf5c!2m2!1d-54.6574964!2d-25.499171?hl=es&entry=ttu"
+                            v-if="store.google_maps_link"
+                            :href="store.google_maps_link"
                             target="_blank"
                             class="btn btn-borda"
                             >Trazar ruta</a

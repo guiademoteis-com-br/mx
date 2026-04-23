@@ -1,14 +1,17 @@
 :root {
-  --color-primary: #204b52;
-  --color-secondary: #ddb8d0;
-  --color-bg-motel: #f8f9fb;
-  --color-bg-local: #ffffff;
+  /* --color-primary: #000;
+  --color-secondary: #dcdcdc; */
+  --color-bg: #FDFDFE;
+  --color-bg-destaque: #f2f4f8;
+  --color-bg-motel: hsl(from var(--color-primary) h s 97%);
+  --color-bg-menu: var(--color-bg);
+  --color-bg-local: #F2F4F8;
 }
 
 html,
 body {
   font-family: "Helvetica Neue", sans-serif;
-  background: #fff;
+  background: var(--color-bg);
   color: #000;
   overflow-x: hidden;
   scrollbar-width: thin;
@@ -76,7 +79,7 @@ a:hover {
 }
 
 .title-header h2 {
-  color: var(--color-primary);
+  color: #000;
   font-weight: 700;
   font-size: 30px;
   display: flex;
@@ -209,7 +212,7 @@ a:hover {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-color: var(--color-secondary);
+  background-color: var(--color-bg-menu);
 }
 
 .overlay__nav--list {
@@ -270,7 +273,7 @@ a:hover {
 }
 
 .nav-item.active a {
-  color: #ffffff;
+  color: #000;
   font-weight: 800;
   line-height: 17.78px;
 }
@@ -413,12 +416,12 @@ a:hover {
 }
 
 .destaque .title-header h2 {
-  color: var(--color-primary);
+  color: #000;
 }
 
 .destaque .title-header h2 span {
   background-color: var(--color-primary);
-  color: var(--color-secondary);
+  color: var(--color-bg-destaque);
 }
 
 .destaque .title-header h2::after {
@@ -433,7 +436,7 @@ a:hover {
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: var(--color-secondary);
+  background-color: var(--color-bg-destaque);
   background-position: center;
   background-size: contain;
 }
@@ -565,11 +568,11 @@ a:hover {
   line-height: 37.55px;
   margin-bottom: 6px;
   text-transform: uppercase;
-  color: var(--color-primary);
+  color: #000;
 }
 
 .motel__content--text p {
-  color: var(--color-secondary);
+  color: var(--color-primary);
   font-weight: 400;
   font-style: italic;
   font-size: 16px;
@@ -608,7 +611,7 @@ a:hover {
 
 .motel__content--image p {
   margin-top: 20px;
-  color: var(--color-secondary);
+  color: #000;
   line-height: 18.38px;
   font-weight: 400;
 }
@@ -763,7 +766,7 @@ a:hover {
   font-size: 14px;
   font-weight: 400;
   line-height: 13.93px;
-  color: #000;
+  color: #ffffff;
 }
 
 .local__content--btn {
@@ -793,7 +796,6 @@ a:hover {
 /* FOOTER */
 .footer {
   position: relative;
-  background-color: #f8f9fb;
 }
 
 .footer::before {
@@ -906,7 +908,7 @@ a:hover {
   position: relative;
   z-index: 1;
   font-family: "Titillium Web", sans-serif;
-  background: var(--color-primary);
+  background: var(--color-secondary);
   padding: 20px;
   font-weight: 600;
   font-size: 12px;

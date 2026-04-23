@@ -1,9 +1,10 @@
 {
     "name": "Liv",
     "slug": "liv",
+    "asset_version": "8e6fceca",
     "review": "<div><span style=\"font-size: 15.2px;\"><b>Lorem ipsum dolor sit amet</b>, adipisicing elit. Tenetur vel odit magnam aperiam blanditiis nostrum eligendi quod! Excepturi, quibusdam quas eaque ratione molestias veritatis temporibus possimus quo libero, culpa consequatur?</span></div><div><span style=\"font-size: 15.2px;\"><br></span></div><div><span style=\"font-size: 15.2px;\">Lorem ipsum dolor sit, amet consectetur <i>adipisicing elit</i>. Earum repudiandae, dolores amet sed nostrum fugiat molestiae voluptates rem autem, ad ex ipsa maxime voluptatibus nobis quas! Placeat impedit modi vero.</span></div>",
-    "primary_color": "#89378b",
-    "secondary_color": "#a45519",
+    "primary_color": "#0d0d0d",
+    "secondary_color": "#a1a1a1",
     "phone": "(99) 9999-9999",
     "whatsapp": "(99) 9999-9999",
     "email": "eleazar.gm@guiademoteis.com.br",
@@ -24,8 +25,46 @@
     "favicon": "conteudo/imagens/favicon.svg",
     "suites": [
         {
+            "slug": "light",
+            "sort_order": "0",
+            "name": "Light",
+            "items": [
+                "Tv",
+                "Wifi"
+            ],
+            "important_infos": [
+                "Lorem ipsum dolor sit amet consectetur",
+                "Lorem ipsum dolor"
+            ],
+            "cover_image": "conteudo/imagens/light-1.jpg",
+            "first_price": "650",
+            "images": [
+                "conteudo/imagens/light-1.jpg",
+                "conteudo/imagens/light-2.jpg",
+                "conteudo/imagens/light-3.jpg"
+            ],
+            "prices": [
+                {
+                    "period": [
+                        2
+                    ],
+                    "weekday": [
+                        "Domingo",
+                        "Segunda-feira",
+                        "Terça-feira",
+                        "Quarta-feira",
+                        "Sábado",
+                        "Sexta-feira",
+                        "Quinta-feira"
+                    ],
+                    "description": "Alguma desc pequenissima",
+                    "value": "650.00"
+                }
+            ]
+        },
+        {
             "slug": "premium",
-            "sort_order": 0,
+            "sort_order": "1",
             "name": "Premium",
             "items": [
                 "Tv",
@@ -73,46 +112,6 @@
                     ],
                     "description": "Hora em dobro",
                     "value": "400.00"
-                }
-            ]
-        },
-        {
-            "slug": "light",
-            "sort_order": 1,
-            "name": "Light",
-            "items": [
-                "Tv",
-                "Wifi"
-            ],
-            "important_infos": [
-                "Lorem ipsum dolor sit amet consectetur",
-                "Lorem ipsum dolor"
-            ],
-            "cover_image": "conteudo/imagens/light-1.jpg",
-            "first_price": "500",
-            "images": [
-                "conteudo/imagens/light-1.jpg",
-                "conteudo/imagens/light-2.jpg",
-                "conteudo/imagens/light-3.jpg"
-            ],
-            "prices": [
-                {
-                    "period": [
-                        2,
-                        4,
-                        6
-                    ],
-                    "weekday": [
-                        "Domingo",
-                        "Segunda-feira",
-                        "Terça-feira",
-                        "Quarta-feira",
-                        "Sábado",
-                        "Sexta-feira",
-                        "Quinta-feira"
-                    ],
-                    "description": "Alguma desc pequena",
-                    "value": "500.00"
                 }
             ]
         }

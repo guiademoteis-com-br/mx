@@ -3,8 +3,9 @@ import { formatPriceValue, getCurrentSuite, loadStore, store } from './store.js'
 const { createApp, computed, ref } = Vue;
 
 await loadStore();
+applyThemeColors(store);
 window.motelStore = store;
-updateFavicon(store.favicon);
+applyFavicon(store.favicon);
 const currentSuite = getCurrentSuite();
 
 const app = createApp({
@@ -105,7 +106,9 @@ app.component('gm-itens-suite', {
 app.component('gm-informacoes-importantes', {
     setup() {
         const currentSuite = getCurrentSuite();
-        const suiteImportantInfos = computed(() => (Array.isArray(currentSuite?.important_infos) ? currentSuite.important_infos.filter(Boolean) : []));
+        const suiteImportantInfos = computed(() =>
+            Array.isArray(currentSuite?.important_infos) ? currentSuite.important_infos.filter(Boolean) : [],
+        );
         return { suiteImportantInfos };
     },
     template: await loadTemplate('gm-informacoes-importantes'),
@@ -172,7 +175,11 @@ export async function loadTemplate(template) {
     return await response.text();
 }
 
-function updateFavicon(href) {
+function applyFavicon(href) {
+    if (!href) {
+        return;
+    }
+
     const selector = 'link[rel="icon"]';
     let link = document.head.querySelector(selector);
 
@@ -182,12 +189,21 @@ function updateFavicon(href) {
         document.head.append(link);
     }
 
-    if (href) {
-        link.href = href;
+    link.href = href;
+}
+
+function applyThemeColors(store) {
+    setThemeColor('--color-primary', store.primary_color);
+    setThemeColor('--color-secondary', store.secondary_color);
+}
+
+function setThemeColor(property, value) {
+    const color = String(value ?? '').trim();
+    if (!color) {
         return;
     }
 
-    link.removeAttribute('href');
+    document.documentElement.style.setProperty(property, color);
 }
 
 function groupPricesByWeekday(prices) {
@@ -292,7 +308,10 @@ function parsePriceWeekdays(value) {
         // Fallback to legacy single-day strings.
     }
 
-    return text.split(',').map(item => item.trim()).filter(Boolean);
+    return text
+        .split(',')
+        .map(item => item.trim())
+        .filter(Boolean);
 }
 
 function extractPricePeriods(period) {
@@ -323,7 +342,8 @@ function parsePricePeriods(value) {
         // Fallback to legacy single-period values.
     }
 
-    return text.split(',').map(item => item.trim()).filter(Boolean);
+    return text
+        .split(',')
+        .map(item => item.trim())
+        .filter(Boolean);
 }
-
-
