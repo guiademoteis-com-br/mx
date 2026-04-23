@@ -4,6 +4,7 @@ const { createApp, computed, ref } = Vue;
 
 await loadStore();
 applyThemeColors(store);
+applyDocumentTitle(store.name);
 window.motelStore = store;
 applyFavicon(store.favicon);
 const currentSuite = getCurrentSuite();
@@ -190,6 +191,15 @@ function applyFavicon(href) {
     }
 
     link.href = href;
+}
+
+function applyDocumentTitle(value) {
+    const title = String(value ?? '').trim();
+    if (!title) {
+        return;
+    }
+
+    document.title = title;
 }
 
 function applyThemeColors(store) {
