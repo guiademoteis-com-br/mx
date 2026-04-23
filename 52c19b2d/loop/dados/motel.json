@@ -1,7 +1,7 @@
 {
     "name": "Loop",
     "slug": "loop",
-    "asset_version": "33db185a",
+    "asset_version": "65bd7450",
     "review": "<div><span style=\"font-size: 15.2px;\">Localizado estrategicamente no Parque São Jorge, o Motel Loop se destaca como uma opção premium para quem busca uma experiência única e sofisticada.</span></div><div><span style=\"font-size: 15.2px;\">Com cinco categorias de suítes, nos tornamos referência em qualidade, oferecendo um excelente custo-benefício e opções para pernoites de longa duração.&nbsp;</span></div><div><span style=\"font-size: 15.2px;\"><br></span></div><div><span style=\"font-size: 15.2px;\">Conheça essa combinação equilibrada entre qualidade, conforto e sofisticação e viva uma experiência inesquecível.</span></div>",
     "primary_color": "#E6007E",
     "secondary_color": "#101010",
@@ -103,8 +103,7 @@
             "images": [
                 "conteudo/imagens/popular-carrossel-2-1.jpeg",
                 "conteudo/imagens/popular-carrossel-2-2.jpeg",
-                "conteudo/imagens/popular-carrossel-2-3.jpeg",
-                "conteudo/imagens/popular-carrossel-2-4.jpeg"
+                "conteudo/imagens/popular-carrossel-2-3.jpeg"
             ],
             "prices": []
         },
