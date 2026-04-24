@@ -261,23 +261,12 @@ function parsePriceValue(value) {
 }
 
 function versionAssetUrl(path) {
-    const url = buildVersionedUrl(path);
-    return url ? appendAssetVersion(url) : null;
-}
-
-function buildVersionedUrl(path) {
     const value = String(path ?? '').trim();
     if (!value) {
         return null;
     }
 
-    return new URL(value, window.location.href);
-}
-
-function appendAssetVersion(url) {
-    if (!(url instanceof URL)) {
-        return null;
-    }
+    const url = new URL(value, window.location.href);
 
     if (url.origin !== window.location.origin) {
         return url.href;

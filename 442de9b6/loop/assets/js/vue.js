@@ -191,8 +191,8 @@ function groupPricesByWeekday(prices) {
     const grouped = new Map(PRICE_WEEKDAY_OPTIONS.map(day => [day.value, []]));
 
     for (const price of prices || []) {
-        const weekdays = extractPriceWeekdays(price?.weekday);
-        const periods = extractPricePeriods(price?.period);
+        const weekdays = extractDistinctValues(price?.weekday, normalizeWeekdayIndex);
+        const periods = extractDistinctValues(price?.period, normalizePeriod);
         const weekdayTargets = weekdays.length ? weekdays : PRICE_WEEKDAY_OPTIONS.map(day => day.value);
         const periodTargets = periods.length ? periods : [''];
 
@@ -212,10 +212,6 @@ function groupPricesByWeekday(prices) {
     }
 
     return grouped;
-}
-
-function extractPriceWeekdays(weekday) {
-    return normalizeDistinctValues(Array.isArray(weekday) ? weekday : parseJsonArrayOrCsv(weekday), normalizeWeekdayIndex);
 }
 
 function normalizeWeekdayIndex(value) {
@@ -265,9 +261,6 @@ function normalizeWeekdayText(value) {
         .replace(/[^a-z]/g, '');
 }
 
-function extractPricePeriods(period) {
-    return normalizeDistinctValues(Array.isArray(period) ? period : parseJsonArrayOrCsv(period), normalizePeriod);
-}
 
 function normalizePeriod(value) {
     const number = Number(value);
@@ -276,6 +269,10 @@ function normalizePeriod(value) {
     }
 
     return number;
+}
+
+function extractDistinctValues(value, normalize) {
+    return normalizeDistinctValues(Array.isArray(value) ? value : parseJsonArrayOrCsv(value), normalize);
 }
 
 function normalizeDistinctValues(values, normalize) {
