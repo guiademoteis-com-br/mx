@@ -1,0 +1,82 @@
+<footer class="footer">
+    <div class="container">
+        <div class="d-none d-lg-block">
+            <div class="footer__content">
+                <div class="footer__content--logo col-md-3 text-center">
+                    <a href="./" aria-label="início">
+                        <img :src="store.logo" class="img-fluid" alt="logo" loading="lazy" />
+                    </a>
+                    <div class="redes-footer">
+                        <ul class="d-flex">
+                            <gm-redes></gm-redes>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-9 d-flex justify-content-evenly">
+                    <div class="footer__content--menu">
+                        <!-- <h2>Suites</h2> -->
+                        <ul>
+                            <gm-lista-suites></gm-lista-suites>
+                        </ul>
+                    </div>
+
+                    <div class="footer-border"></div>
+
+                    <div class="footer__content--menu footer__itens">
+                        <ul>
+                            <li><a href="./">Inicio</a></li>
+                            <li><a href="suites.html">Suites</a></li>
+                            <li><a href="motel.html">Sobre el Motel</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-border"></div>
+
+                    <div class="footer__content--menu footer-contact">
+                        <div class="footer-contact-list">
+                            <gm-contatos></gm-contatos>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FOOTER MOBILE -->
+        <div class="d-sm-block d-md-block d-lg-none">
+            <div class="footer__content--mobile">
+                <ul>
+                    <li>
+                        <a
+                            v-if="store.google_maps_link"
+                            :href="store.google_maps_link"
+                            target="_blank"
+                            class="btn btn-borda"
+                            >Trazar ruta</a
+                        >
+                    </li>
+                    <li>
+                        <a href="suites.html" class="btn btn-borda">Ver las suites</a>
+                    </li>
+                    <li>
+                        <a v-if="store.whatsapp_link" :href="store.whatsapp_link" target="_blank" class="btn btn-borda">
+                            <i class="fa-brands fa-whatsapp"></i> WhatsApp
+                        </a>
+                    </li>
+                </ul>
+                <div class="footer-redes">
+                    <div class="footer-redes-icons">
+                        <gm-redes></gm-redes>
+                    </div>
+                    <div>
+                        <p>Siga nuestras redes sociales</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer__assinatura col-md-12">
+        <div class="footer__assinatura--text text-center">
+            <a href="http://sites.guiademoteis.com.br" target="_blank">GUIA DE MOTEIS SITIOS WEB</a> | GUIA DE MOTEIS ©
+        </div>
+    </div>
+</footer>

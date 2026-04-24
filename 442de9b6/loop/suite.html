@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Hospedaje por horas con privacidad y comodidad." />
+        <title></title>
+        <link rel="stylesheet" href="assets/css/master.css?v=84ca336a" />
+        <link rel="stylesheet" href="assets/css/internas.css?v=84ca336a" />
+        <link href="https://fonts.cdnfonts.com/css/helvetica-neue-55" rel="stylesheet" />
+
+        <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css" />
+        <link rel="stylesheet" href="https://unpkg.com/flickity-fade@1/flickity-fade.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+    </head>
+
+    <body>
+        <main id="app" v-cloak>
+            <gm-header></gm-header>
+
+            <section class="topo" :style="topoStyle">
+                <div class="topo__content">
+                    <div class="topo__content--text">
+                        <h2>{{ currentSuiteName }}</h2>
+                    </div>
+                </div>
+            </section>
+
+            <section class="suit-int internas">
+                <div class="container">
+                    <div class="suites-int__content">
+                        <div class="suites-int__row">
+                            <div class="suites-int--slide col-md-12 col-xs-12 p-0">
+                                <div class="suites__slide--flickity">
+                                    <gm-fotos-suite></gm-fotos-suite>
+                                </div>
+                            </div>
+
+                            <div class="suites__content--itens">
+                                <div class="suite-prices">
+                                    <gm-tabela-periodos-precos></gm-tabela-periodos-precos>
+                                </div>
+
+                                <div class="suites__tem">
+                                    <div class="suites__calendar--itens">
+                                        <h4>Esta suite cuenta con:</h4>
+                                        <p>
+                                            <gm-itens-suite></gm-itens-suite>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="suites__import">
+                                    <div class="suites__important">
+                                        <h4>Informaciones importantes:</h4>
+                                        <gm-informacoes-importantes></gm-informacoes-importantes>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="destaque">
+                <div class="destaque__content">
+                    <div class="motel__header title-header">
+                        <h2 class="title">
+                            <span><strong>O</strong> </span>tras suites
+                        </h2>
+                    </div>
+                    <div class="container-fluid">
+                        <div class="destaque__flickity">
+                            <gm-suites></gm-suites>
+                        </div>
+                    </div>
+                    <div class="destaque__btn d-sm-block d-md-block d-lg-none">
+                        <a href="suites.html" class="btn">Ver todas las suites</a>
+                    </div>
+                </div>
+            </section>
+
+            <gm-footer></gm-footer>
+        </main>
+
+        <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+        <script src="assets/js/vue.js?v=84ca336a" type="module"></script>
+
+        <script src="assets/bootstrap/bootstrap.bundle.min.js?v=84ca336a"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+        <script src="https://unpkg.com/flickity-fade@1/flickity-fade.js"></script>
+        <script src="assets/js/scripts.js?v=84ca336a"></script>
+    </body>
+</html>
