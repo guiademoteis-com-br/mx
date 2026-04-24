@@ -1,0 +1,4 @@
+<p v-if="suiteImportantInfos.length === 0">Sin informaciones.</p>
+<p v-else v-for="(info, index) in suiteImportantInfos" :key="info + '-' + index">
+    {{ info }}
+</p>
