@@ -1,0 +1,3 @@
+<li v-for="suite in store.suites" :key="suite.slug">
+    <a :href="'suite.html?slug=' + suite.slug">{{ suite.name }}</a>
+</li>
