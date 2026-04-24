@@ -1,23 +1,23 @@
 {
     "name": "Loop",
     "slug": "loop",
-    "asset_version": "867ce474",
+    "asset_version": "a8f5ff12",
     "review": "<div><span>Localizado estrategicamente no Parque São Jorge, o Motel Loop se destaca como uma opção premium para quem busca uma experiência única e sofisticada.</span></div><div><span>Com cinco categorias de suítes, nos tornamos referência em qualidade, oferecendo um excelente custo-benefício e opções para pernoites de longa duração. </span></div><div><span><br></span></div><div><span>Conheça essa combinação equilibrada entre qualidade, conforto e sofisticação e viva uma experiência inesquecível.</span></div>",
     "primary_color": "#8b3784",
     "secondary_color": "#3e3a38",
     "phone": "(11) 9219-3050",
     "whatsapp": "(11) 9219-3050",
     "email": "eleazar.gm@guiademoteis.com.br",
-    "zip_code": "04100",
-    "state": "Ciudad de México",
-    "city": "Coyoacán",
-    "neighborhood": "Del Carmen",
-    "street": "Rua bonitona mexicana",
-    "ext_number": "123",
-    "int_number": "A",
-    "facebook_link": "https://www.facebook.com/loopmotel",
-    "instagram_link": "https://www.instagram.com/loopmotel",
-    "google_maps_link": "https://www.google.com/maps/dir//Loop+Motel+-+Rua+Hely+Lopes+Meirelles,+1609+-+Vila+Moreira,+S%C3%A3o+Paulo+-+SP,+03088-000/@-23.5247742,-46.5632477,17z/data=!4m19!1m10!3m9!1s0x94ce5fa2d30035b1:0xc919307b2f3ac20b!2sLoop+Motel!5m2!4m1!1i2!8m2!3d-23.5247742!4d-46.5606728!16s%2Fg%2F11y3mm4zk0!4m7!1m0!1m5!1m1!1s0x94ce5fa2d30035b1:0xc919307b2f3ac20b!2m2!1d-46.5606728!2d-23.5247742?entry=ttu&g_ep=EgoyMDI2MDQyMS4wIKXMDSoASAFQAw%3D%3D",
+    "zip_code": "",
+    "state": "",
+    "city": "",
+    "neighborhood": "",
+    "street": "",
+    "ext_number": "",
+    "int_number": "",
+    "facebook_link": "",
+    "instagram_link": "",
+    "google_maps_link": "",
     "facade_image": "conteudo/imagens/facade.jpg",
     "banner_mobile": "conteudo/imagens/banner-mobile.jpg",
     "banner_desktop": "conteudo/imagens/banner-desktop.jpg",
@@ -96,32 +96,6 @@
             "first_price": null,
             "images": [
                 "conteudo/imagens/teste-2-1.jpg"
-            ],
-            "prices": []
-        },
-        {
-            "slug": "teste-3",
-            "sort_order": 2,
-            "name": "Teste #3",
-            "items": [],
-            "important_infos": [],
-            "cover_image": "conteudo/imagens/teste-3-1.jpg",
-            "first_price": null,
-            "images": [
-                "conteudo/imagens/teste-3-1.jpg"
-            ],
-            "prices": []
-        },
-        {
-            "slug": "teste-4",
-            "sort_order": 3,
-            "name": "Teste #4",
-            "items": [],
-            "important_infos": [],
-            "cover_image": "conteudo/imagens/teste-4-1.jpg",
-            "first_price": null,
-            "images": [
-                "conteudo/imagens/teste-4-1.jpg"
             ],
             "prices": []
         }
